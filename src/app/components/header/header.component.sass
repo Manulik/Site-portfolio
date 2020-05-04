@@ -1,0 +1,370 @@
+@media (min-width: 992px)
+    header
+        width: 100%
+        height: 70px
+        border-bottom: 1px solid #e3e3e3
+        background: #fff
+        position: fixed
+        z-index: 100
+        .header-container
+            width: 80%
+            height: 100%
+            display: flex
+            justify-content: space-between
+            margin: 0 auto
+            .name
+                margin-top: 20px
+                h6
+                    margin: 0
+                    font-family: Arial, Helvetica, sans-serif
+                    font-size: 27px
+                    color: #252525
+                    span
+                        color: #2a2afd
+                        font-family: Comic Sans MS, Comic Sans, cursive
+
+            #menu__toggle
+                opacity: 0
+                margin: 0
+
+            ul
+                display: flex
+                // justify-content: center
+                // min-width: 500px
+                margin: 0
+                padding: 0
+
+            li
+                list-style-type: none
+                margin-right: 35px
+                margin-top: 7px
+
+                a
+                    margin: 0
+                    font-size: 12px
+                    font-family: Arial, Helvetica, sans-serif
+                    text-decoration: none
+                    color: black
+                    text-transform: uppercase
+                    &:hover
+                        cursor: pointer
+                        text-decoration: underline
+                        color: #2a2afd
+
+@media (max-width: 991px)
+  header
+      width: 100%
+      height: 60px
+      border-bottom: 1px solid #e3e3e3
+      background: #fff
+      position: fixed
+      z-index: 100
+      .header-container
+          display: flex
+          justify-content: space-between
+          .name
+                margin-top: 15px
+                padding-left: 20px
+                h6
+                    margin: 0
+                    margin-right: 10px
+                    font-family: Arial, Helvetica, sans-serif
+                    font-size: 27px
+                    color: #252525
+                    span
+                        color: #2a2afd
+  #menu__toggle
+    opacity: 0
+
+    &:checked ~
+      .menu__btn > span
+        transform: rotate(45deg)
+
+        &::before
+          top: 0
+          transform: rotate(0)
+
+        &::after
+          top: 0
+          transform: rotate(90deg)
+
+      .menu__box
+        visibility: visible
+        left: 0
+
+  .menu__btn
+    display: flex
+    align-items: center
+    position: fixed
+    top: 20px
+    left: 20px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+
+    > span
+      display: block
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: #616161
+      transition-duration: .25s
+
+      &::before, &::after
+        display: block
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: #616161
+        transition-duration: .25s
+
+      &::before
+        content: ''
+        top: -8px
+
+      &::after
+        content: ''
+        top: 8px
+
+  .menu__box
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 70%
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background-color: #ECEFF1
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2)
+    transition-duration: .25s
+
+  .menu__item
+    display: block
+    padding: 12px 24px
+    color: #333
+    font-family: 'Roboto', sans-serif
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+
+    &:hover
+      background-color: #CFD8DC
+
+
+
+
+
+@media (max-width: 222px)
+  header
+      width: 100%
+      height: 60px
+      border-bottom: 1px solid #e3e3e3
+      background: #fff
+      position: fixed
+      z-index: 100
+      .header-container
+          display: flex
+          justify-content: space-between
+          .name
+                margin-top: 15px
+                padding-left: 20px
+                h6
+                    margin: 0
+                    margin-right: 10px
+                    font-family: Arial, Helvetica, sans-serif
+                    font-size: 27px
+                    color: #252525
+                    span
+                        color: #2a2afd
+  #menu__toggle
+    opacity: 0
+
+    &:checked ~
+      .menu__btn > span
+        transform: rotate(45deg)
+
+        &::before
+          top: 0
+          transform: rotate(0)
+
+        &::after
+          top: 0
+          transform: rotate(90deg)
+
+      .menu__box
+        visibility: visible
+        left: 0
+
+  .menu__btn
+    display: flex
+    align-items: center
+    position: fixed
+    top: 20px
+    left: 20px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+
+    > span
+      display: block
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: #616161
+      transition-duration: .25s
+
+      &::before, &::after
+        display: block
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: #616161
+        transition-duration: .25s
+
+      &::before
+        content: ''
+        top: -8px
+
+      &::after
+        content: ''
+        top: 8px
+
+  .menu__box
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 70%
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background-color: #ECEFF1
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2)
+    transition-duration: .25s
+
+  .menu__item
+    display: block
+    padding: 12px 24px
+    color: #333
+    font-family: 'Roboto', sans-serif
+    font-size: 15px
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+
+    &:hover
+      background-color: #CFD8DC
+
+
+
+@media (max-width: 165px)
+  header
+      width: 100%
+      height: 60px
+      border-bottom: 1px solid #e3e3e3
+      background: #fff
+      position: fixed
+      .header-container
+          display: flex
+          justify-content: space-between
+          .name
+                margin-top: 15px
+                padding-left: 20px
+                h6
+                    margin: 0
+                    margin-right: 10px
+                    font-family: Arial, Helvetica, sans-serif
+                    font-size: 27px
+                    color: #252525
+                    span
+                        color: #2a2afd
+  #menu__toggle
+    opacity: 0
+
+    &:checked ~
+      .menu__btn > span
+        transform: rotate(45deg)
+
+        &::before
+          top: 0
+          transform: rotate(0)
+
+        &::after
+          top: 0
+          transform: rotate(90deg)
+
+      .menu__box
+        visibility: visible
+        left: 0
+
+  .menu__btn
+    display: flex
+    align-items: center
+    position: fixed
+    top: 20px
+    left: 20px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+
+    > span
+      display: block
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: #616161
+      transition-duration: .25s
+
+      &::before, &::after
+        display: block
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: #616161
+        transition-duration: .25s
+
+      &::before
+        content: ''
+        top: -8px
+
+      &::after
+        content: ''
+        top: 8px
+
+  .menu__box
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 60%
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background-color: #ECEFF1
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2)
+    transition-duration: .25s
+
+  .menu__item
+    display: block
+    padding: 12px 24px
+    color: #333
+    font-family: 'Roboto', sans-serif
+    font-size: 10px
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+
+    &:hover
+      background-color: #CFD8DC
