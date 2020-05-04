@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { BodyComponent } from './components/body/body.component';
-import { NetworksComponent } from './components/networks/networks.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     HelloComponent,
     BodyComponent,
-    NetworksComponent
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
