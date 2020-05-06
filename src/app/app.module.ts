@@ -7,6 +7,7 @@ import { HelloComponent } from './components/hello/hello.component';
 import { BodyComponent } from './components/body/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     HeaderComponent,
     HelloComponent,
     BodyComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

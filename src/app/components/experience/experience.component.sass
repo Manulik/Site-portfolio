@@ -2,9 +2,11 @@
     width: 100%
     min-height: 245px
     margin-top: 50px
+    position: relative
+    top: 250px
     .skills-container
         width: 80%
-        height: 300px
+        min-height: 300px
         margin: 0 auto
         background: white
         display: flex
@@ -40,25 +42,38 @@
                     width: 100%
         .my-skills
             width: 70%
-            height: 100%
-            display: flex
-            flex-wrap: wrap
-            .skill
-                width: 50%
-                h4
+            min-height: 100px
+            margin-left: 30px
+            .name-of-experience
+                min-width: 100px
+                min-height: 10px
+                h6
                     margin: 0
-                    font-size: 23px
+                    font-size: 20px
                     color: inherit
                     line-height: 1.55
                     font-weight: 400
                     font-family: "Lato", sans-serif
-                .p-skills
-                    width: 300px
-                    p
-                        font-size: 16px
-                        line-height: 1.56
-                        color: #828282
-                        font-family: "Roboto", sans-serif
+                p
+                    margin: 0
+                    font-size: 13px
+                    line-height: 1.56
+                    color: #828282
+                    font-family: "Roboto", sans-serif
+            ul
+                margin: 0
+                padding: 0
+                width: 400px
+                min-height: 50px
+                margin-top: 10px
+                margin-left: 50px
+                box-sizing: border-box
+                li
+                    margin: 0
+                    font-size: 13px
+                    line-height: 1.56
+                    color: #615f5f
+                    font-family: "Roboto", sans-serif
     .end-hr
         width: 100%
         height: 1px
@@ -70,6 +85,8 @@
         width: 100%
         min-height: 245px
         margin-top: 50px
+        position: relative
+        top: 250px
         .skills-container
             width: 80%
             height: 300px
@@ -109,6 +126,9 @@
                 width: 70%
                 height: 100%
                 display: block
+                .name-of-experience
+                    h6
+                        font-size: 17px
                 .skill
                     width: 50%
                     margin-top: 30px
@@ -128,19 +148,121 @@
                             line-height: 1.56
                             color: #828282
                             font-family: "Roboto", sans-serif
+                ul
+                    margin: 0
+                    padding: 0
+                    width: 300px
+                    min-height: 50px
+                    margin-top: 10px
+                    box-sizing: border-box
+                    li
+                        margin: 0
+                        font-size: 13px
+                        line-height: 1.56
+                        color: #615f5f
+                        font-family: "Roboto", sans-serif
     .end-block
         width: 100%
         height: 1px
         background: #e3e3e3
         margin-top: 5px
     .end-hr
-        display: none
+        position: relative
+        top: 150px
 
 @media screen and ( max-width: 340px )
     .skills
         width: 100%
         min-height: 245px
         margin-top: 50px
+        .skills-container
+            width: 80%
+            height: 300px
+            margin: 0 auto
+            background: white
+            display: block
+            .name-of-block
+                width: 26%
+                height: 130px
+                margin-right: 50px
+                display: flex
+                justify-content: space-between
+                // background: yellow
+                .name
+                    min-height: 100px
+                    h3
+                        margin: 0
+                        font-size: 25px
+                        line-height: 1.4
+                        font-weight: 700
+                        font-family: Comic Sans MS, Comic Sans, cursive
+                        span
+                            color: #2a2afd
+                    .p-block
+                        margin-top: 10px
+                        width: 200px
+                        p
+                            margin: 0
+                            font-size: 13px
+                            line-height: 1.56
+                            font-family: "Roboto", sans-serif
+                            color: #828282
+                // .image-end
+                //     display: none
+                //     height: 0
+                //     float: right
+            .my-skills
+                width: 70%
+                height: 100%
+                display: block
+                .skill
+                    width: 50%
+                    margin-top: 30px
+                    h6
+                        min-width: 160px
+                        margin: 0
+                        font-size: 15px
+                        color: inherit
+                        line-height: 1.55
+                        font-weight: 400
+                        font-family: "Lato", sans-serif
+                    .p-skills
+                        width: 70%
+                        p
+                            margin: 0
+                            font-size: 11px
+                            line-height: 1.56
+                            color: #828282
+                            font-family: "Roboto", sans-serif
+            ul
+                margin: 0
+                padding: 0
+                width: 250px
+                min-height: 50px
+                margin-top: 10px
+                margin-left: 50px
+                li
+                    margin: 0
+                    font-size: 13px
+                    line-height: 1.56
+                    color: #615f5f
+                    font-family: "Roboto", sans-serif
+    .end-block
+        width: 100%
+        height: 1px
+        background: #e3e3e3
+        margin-top: 5px
+    .end-hr
+        position: relative
+        top: 250px
+
+@media screen and ( max-width: 341px )
+    .skills
+        width: 100%
+        min-height: 245px
+        margin-top: 50px
+        position: relative
+        top: 600px
         .skills-container
             width: 80%
             height: 300px
@@ -200,10 +322,24 @@
                             line-height: 1.56
                             color: #828282
                             font-family: "Roboto", sans-serif
+            ul
+                margin: 0
+                padding: 0
+                width: 10px
+                min-height: 50px
+                margin-top: 10px
+                margin-left: 50px
+                li
+                    margin: 0
+                    font-size: 13px
+                    line-height: 1.56
+                    color: #615f5f
+                    font-family: "Roboto", sans-serif
     .end-block
         width: 100%
         height: 1px
         background: #e3e3e3
         margin-top: 5px
     .end-hr
-        display: none
+        position: relative
+        top: 250px
